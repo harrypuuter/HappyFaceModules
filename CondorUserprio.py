@@ -30,7 +30,7 @@ class CondorUserprio(hf.module.ModuleBase):
 
     subtable_columns = {
         'user': ([
-            Column("user", TEXT),
+            Column("username", TEXT),
             Column("prio", INT)], [])
     }
 

@@ -54,7 +54,7 @@ class V2CMS6Status(hf.module.ModuleBase):
 
     subtable_columns = {
         'statistics': ([
-            Column("user", TEXT),
+            Column("username", TEXT),
             Column("idle", TEXT),
             Column("queued", TEXT),
             Column("running", TEXT),
@@ -72,9 +72,9 @@ class V2CMS6Status(hf.module.ModuleBase):
             Column("status", INT),
             Column("jobid", TEXT),
             Column("cpu", TEXT),
-            Column("user", TEXT),
+            Column("username", TEXT),
             Column("host", TEXT),
-            Column("requestwalltime", INT),
+            Column("requestwalltime", TEXT),
             Column("ram", TEXT)], [])
     }
 

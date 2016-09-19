@@ -77,7 +77,7 @@
         % else:
           <tr class=ok>
         % endif
-            <td width="15%">${entry['user']}</td>
+            <td width="15%">${entry['username']}</td>
             <td width="10%">${entry['sites']}</td>
             <td width ="10%">${entry['queued']}</td>
             <td width ="10%">${entry['idle']}</td>
@@ -106,7 +106,7 @@
       %for entry in jobs:
         <tr>
           <td width="20%">${entry['jobid']}</td>
-          <td width ="20%"> ${entry['user']}</td>
+          <td width ="20%"> ${entry['username']}</td>
           <td width ="20%"> ${entry['host']}</td>
           %if entry['ram'] =='undefined':
     	       <td width="15%"> Undefined </td>
